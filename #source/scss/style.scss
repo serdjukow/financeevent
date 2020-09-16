@@ -29,6 +29,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 	max-width: 1440px;
 	position: relative;
 	margin: 0 auto;
+	padding: 0 20px;
 }
 .header {
 	margin-bottom: 22px;
@@ -62,7 +63,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 	.content_row {
 		display: flex;
 		.content_column {
-			min-height: 400px;			
+			min-height: 40px;			
 		}
 		.column-left {
 			width: 70%;
@@ -88,6 +89,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 				align-items: center;
 				position: relative;
 				transition: all .1s ease;
+				margin-right: 20px;
 				span {
 					display: block;
 					color: #979797;
@@ -112,6 +114,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 			}
 			.content-video {
 				margin-bottom: 50px;
+				margin-right: 20px;
 				max-width: 856px;
 				video {
 					width: 100%;
@@ -125,17 +128,44 @@ table { border-collapse: collapse; border-spacing: 0; }
 			width: 30%;
 			background-color: #424242;
 			position: relative;
+			margin-bottom: 20px;
+		}
+	}
+	.content-sponsors {
+		border-top: 1px solid #979797;
+	}
+	.sponsors-row {
+		display: flex;		
+		
+	}
+	.sponsors-column {
+
+	}
+	.sponsors-column.left {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;		
+		padding: 20px 0;
+		width: 70%;
+	}
+	.sponsors-element {
+		margin: 0 10px;
+		img {
+			display: block;
+			max-width: 100%;
 		}
 	}
 }
 @media (max-width: 924px) {
+	.container {
+		padding: 0 10px;
+	}
 	.content {
 		position: relative;
 		.content_row {
 			display: flex;
 			flex-direction: column;
-			.content_column {
-				min-height: 400px;			
+			.content_column {			
 			}
 			.column-left {
 				width: 100%;
@@ -150,12 +180,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 				}
 				.element-details {
-
-
-	
+					margin-right: 0;	
 				}
 				.content-video {
 					width: 100%;
+					margin-bottom: 20px;
 				}
 				.content-sponsors {
 				}
@@ -164,6 +193,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 			.column-right {
 				width: 100%;
 			}
+		}
+		.sponsors-column.left {		
+			width: 100%;
 		}
 	}
 
