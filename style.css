@@ -84,17 +84,17 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .content .content_row .column-right .column-right-nav .nav-element:hover { background-color: #c2c2c2; }
 
-.content .content-sponsors { border-top: 1px solid #979797; }
+.content-sponsors { border-top: 1px solid #979797; }
 
-.content .sponsors-row { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.sponsors-row { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.content .sponsors-column.left { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 70%; }
+.sponsors-column.left { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 70%; }
 
-.content .sponsors-element { padding: 20px; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
+.sponsors-element { padding: 20px; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
 
-.content .sponsors-element img { display: block; max-width: 100%; height: 30px; }
+.sponsors-element img { display: block; max-width: 100%; height: 30px; }
 
-.content .sponsors-element:hover { cursor: pointer; background-color: #424242; }
+.sponsors-element:hover { cursor: pointer; background-color: #424242; }
 
 @media (max-width: 924px) { .container { padding: 0 10px; }
   .content { position: relative; }
@@ -121,4 +121,12 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .footer .footer-nav .nav-links:hover { color: #2e80bf; }
 
-.footer .footer-bottom { padding: 30px 0; color: #969696; font-size: 16px; }
+.footer .footer-bottom { padding: 30px 0; color: #969696; font-size: 14px; }
+
+.contact-link { display: block; padding: 10px; background-color: #2e80bf; border: 1px solid #2e80bf; color: #fff; -webkit-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease; }
+
+.contact-link:hover { background-color: #2F2F2F; border: 1px solid #2e80bf; }
+
+.contact { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; min-height: 500px; padding: 30px; }
+
+.contact span { display: block; color: #fff; margin-bottom: 20px; font-size: 20px; }
