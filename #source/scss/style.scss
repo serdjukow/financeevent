@@ -1,0 +1,212 @@
+//========================== Null style ==================================================================================
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+html, body { line-height: 1; height: 100%; }
+ol, ul { list-style: none; }
+a { text-decoration: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+//========================== Null style ===================================================
+.main {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;	
+	background: #2F2F2F;
+	display: flex;
+	flex-direction: column;	
+	width: 100%;
+}
+.container {
+	max-width: 1440px;
+	position: relative;
+	margin: 0 auto;
+}
+.header {
+	margin-bottom: 22px;
+}
+.header_row {
+	display: flex;
+}
+.header-logo {
+	display: flex;
+	.logo_1,
+	.logo_2 {
+		width: 100px;
+		height: 100px;
+		img {
+			display: block;
+			max-width: 100%;
+		}
+	}
+}
+.header-titel {
+	display: flex;
+	align-items: center;
+	padding: 0 20px;
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}
+.content {
+	position: relative;
+	.content_row {
+		display: flex;
+		.content_column {
+			min-height: 400px;			
+		}
+		.column-left {
+			width: 70%;
+			.content-slider {
+				margin-bottom: 20px;
+			}
+			.slider-element {
+				display: flex;
+			}
+			.element-logo {
+				background-image: url(images/logo/Sb_banners_platforma_sronfa-02.jpg);
+				background-position: center center;
+				background-size: cover;
+				width: 728px;
+				height: 90px;
+			}
+			.element-details {
+				background-color: #424242;
+				width: 100%;
+				max-width: 128px;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				position: relative;
+				transition: all .1s ease;
+				span {
+					display: block;
+					color: #979797;
+					font-family: Roboto, sans-serif;
+					font-size: 14px;
+					font-weight: 400;
+					transform: rotate(-90deg);
+					margin-right: 4px;
+				}
+				img {
+					position: absolute;
+					top: 50%;
+					right: 14px;
+					transform: translateY(-50%);
+				}
+				&:hover {
+					background-color: #545454;
+					span {
+						color: rgb(156, 156, 156);
+					}
+				}
+			}
+			.content-video {
+				margin-bottom: 50px;
+				max-width: 856px;
+				video {
+					width: 100%;
+				}
+			}
+			.content-sponsors {
+			}
+
+		}
+		.column-right {
+			width: 30%;
+			background-color: #424242;
+			position: relative;
+		}
+	}
+}
+@media (max-width: 924px) {
+	.content {
+		position: relative;
+		.content_row {
+			display: flex;
+			flex-direction: column;
+			.content_column {
+				min-height: 400px;			
+			}
+			.column-left {
+				width: 100%;
+				.content-slider {
+					margin-bottom: 20px;
+					width: 100%;
+				}
+				.slider-element {
+					display: flex;
+				}
+				.element-logo {
+
+				}
+				.element-details {
+
+
+	
+				}
+				.content-video {
+					width: 100%;
+				}
+				.content-sponsors {
+				}
+
+			}
+			.column-right {
+				width: 100%;
+			}
+		}
+	}
+
+ }
+
+
+.footer {
+	position: relative;
+	border-top: 1px solid #979797;
+	.footer-nav {
+		margin-bottom: 20px;
+		.nav_row {
+			display: flex;
+		}
+		.nav-logo {
+			display: block;
+			width: 60px;
+			margin-right: 40px;
+			flex: 0 0 auto;
+			img {
+				display: block;
+				max-width: 100%;
+			}
+		}
+		.nav-links {
+			display: flex;
+			align-items: flex-end;
+			color: #fff;
+			font-size: 18px;
+			font-weight: 400;
+			text-decoration: none;
+			margin-right: 40px;
+			white-space: nowrap;
+			transition: all .1s ease;
+			
+			&:hover {
+				color:#2e80bf;
+			}
+		}
+	}
+	.footer-bottom {
+		padding: 30px 0;
+		color:#fff;
+		font-size: 16px;
+	}
+}
