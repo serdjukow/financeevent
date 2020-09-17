@@ -32,6 +32,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 	position: relative;
 	margin: 0 auto;
 	padding: 0 20px;
+	overflow: hidden;
 }
 .header {
 	margin-bottom: 22px;
@@ -79,7 +80,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 				background-image: url(images/logo/Sb_banners_platforma_sronfa-02.jpg);
 				background-position: center center;
 				background-size: cover;
-				width: 728px;
+				width: 100%;
 				height: 90px;
 			}
 			.element-details {
@@ -114,70 +115,15 @@ table { border-collapse: collapse; border-spacing: 0; }
 					}
 				}
 			}
-			.content-video {
-				margin-bottom: 50px;
-				margin-right: 20px;
-				max-width: 856px;
-				video {
-					width: 100%;
-				}
-			}
 		}
 		.column-right {
-			width: 30%;
+			width: 40%;
 			background-color: #424242;
 			position: relative;
 			margin-bottom: 20px;				
-			padding: 20px;	
-			.column-right-title {
-				padding: 10px 0;
-				color: #fff;
-				font-size: 16px;
-				text-align: center;				
-				text-transform: uppercase;
-				}		
-			.column-right-nav {
-				max-height: 600px;			
+			padding: 20px;
+			max-height: 600px;
 			overflow-y: auto;
-				.nav-element {
-					margin-bottom: 20px;
-					padding: 10px;	
-					display: flex;
-					background-color: #fff;
-					color:#222;
-					transition: all .3s ease;
-					.video-info {
-							width: 70%;							
-						.video-title {
-							font-size: 14px;							
-							text-transform: uppercase;
-							margin-bottom: 10px;
-						}
-						.autor,
-						.position {
-							font-size: 10px;
-							color: rgb(139, 139, 139);
-							line-height: 12px;
-							font-style: italic;
-						}
-					}
-					.preview {
-						width: 30%;
-						border-left: 1px solid #333;
-						padding: 10px;
-						display: flex;
-						justify-content: center;
-						align-items: center;
-						img {
-							display: block;
-							max-width: 100%;
-						}
-					}
-					&:hover {
-						background-color: rgb(194, 194, 194);
-					}
-				}
-			}		
 		}
 	}	
 }
@@ -185,8 +131,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 	border-top: 1px solid #979797;
 }
 .sponsors-row {
-	display: flex;		
-	
+	display: flex;	
 }
 .sponsors-column {
 
@@ -195,7 +140,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 70%;
+	width: 60%;
 }
 .sponsors-element {
 	padding: 20px;
@@ -209,9 +154,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 		cursor: pointer;
 		background-color: #424242;
 	}
-
 }
-@media (max-width: 924px) {
+@media (max-width: 1024px) {
 	.container {
 		padding: 0 10px;
 	}
@@ -231,9 +175,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 				.slider-element {
 					display: flex;
 				}
-				.element-logo {
 
-				}
 				.element-details {
 					margin-right: 0;	
 				}
@@ -323,3 +265,156 @@ table { border-collapse: collapse; border-spacing: 0; }
 		font-size: 20px;
 	}
 }
+
+
+
+
+/*==========================================promo=======================================*/
+.promo {
+  margin-bottom: 44px;
+	min-height: 540px; 
+}
+  .promo__wrap {
+    display: flex;
+    justify-content: space-between;
+		flex-wrap: wrap; 
+	}
+
+  .promo__item {
+    width: 728px;
+    height: 90px;
+		overflow: hidden; 
+	}
+    .promo__item img {
+			transition: all .3s; 
+		}
+    .promo__item:hover img {
+      transform: scale(1.02);
+			transition: all .3s; 
+		}
+    .promo__item-caption {
+			transition: all .3s; 
+			color:#222;
+		}
+      .promo__item-caption small {
+        display: block;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+				text-transform: none; 
+				color:#222;
+			}
+  .promo__video {
+    height: 490px;
+		margin: 0 20px 20px 0;
+		position: relative;
+		box-sizing: border-box; 
+	}
+    .promo__video-box {
+      position: absolute;
+      visibility: hidden;
+			opacity: 0;			
+      transform: translateY(20px);
+      width: 100%;
+			height: 100%;			
+			transition: all 0s; 
+		}
+      .promo__video-box.active {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+				transition: all .3s; 
+			}
+    .promo__video iframe {
+      width: 100%;
+			height: 100%; 
+			position: relative;
+		
+		}
+  .promo__right {
+    width: 501px;
+    padding: 11px 22px 15px;
+    background-color: #424242;
+    font-size: 24px;
+    line-height: 28px;
+		color: #FFFFFF; 
+	}
+    .promo__right-item {
+      background-color: #ECECEC;
+			cursor: pointer;
+			overflow-y: auto;
+			max-height: 580px;
+	
+			transition: all .3s; 
+		}
+      .promo__right-item:hover {
+				background-color: #f0f0f0; 
+			}
+        .promo__right-item:hover .promo__item-caption {
+          color: #2e80bf;
+					transition: all .3s; 
+				}
+        .promo__right-item:hover .promo__play-bg img {
+          transform: scale(1.05);
+					transition: all .3s; 
+				}
+      .promo__right-item + .promo__right-item {
+				margin-top: 12px;
+				display: flex; 
+			}
+  .promo__caption {
+    text-align: center;
+		margin-bottom: 8px;
+		color: #fff;
+	}
+	.flex {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+  .promo__box {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 12px 17px 12px 19px;
+    border-right: 1px solid #DBDBDB;
+		margin-right: -2px; 
+	}
+  .promo__play {
+    padding: 5px 9px;
+		border-left: 1px solid #DBDBDB; 
+	}
+    .promo__play-box {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+      width: 154px;
+      height: 67px;
+      background-color: #C4C4C4;
+      cursor: pointer;
+      position: relative;
+      z-index: 10; }
+    .promo__play img {
+      width: 33.54px;
+      height: 35.72px;
+			object-fit: contain; 
+		}
+    .promo__play-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+			overflow: hidden; 
+		}
+      .promo__play-bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+				transition: all .3s; 
+			}
+/*==========================================info=======================================*/
+

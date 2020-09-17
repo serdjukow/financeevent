@@ -8,6 +8,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="style.css">
 	<title>Онлайн форум — Онлайн форум "Казначейство — 2020"</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<style type="text/css">
 		.recentcomments a {
 			display: inline !important;
@@ -52,128 +53,87 @@
 					</a>
 				</div>
 			</div>
-			<div class="content-video">
-				<video data-html5-video="" poster="https://www.cdn.facecast.net/f/7/9745-preview19.jpg"
-					src="video/videoplayback.mp4" loop="" controls="" playsinline="" webkit-playinginline="">
-				</video>
-			</div>
+			<div class="promo__video">
+				<div class="promo__video-box"></div>
+				<div class="promo__video-box" data-tab-box="1" data-video="nwZNGngFbVQ"></div>
+				 <div class="promo__video-box active" data-tab-box="2" data-video="OPX-G2oE59Y"> <iframe src="https://www.youtube.com/embed/OPX-G2oE59Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+				 <div class="promo__video-box" data-tab-box="3" data-video="cGIKN11PX4o"></div>
+				 <div class="promo__video-box" data-tab-box="4" data-video="nLQ128rQr-g"></div>
+				 <div class="promo__video-box" data-tab-box="5" data-video="P1wKk8Mkmv0"></div>
+		 </div>
 		</div>
 		<div class="content_column column-right">
-			<div class="column-right-title">
-				Записи сессий
-			</div>
-			<div class="column-right-nav">
-				<ul>
-					<li>
-						<a class="nav-element" href="">
-							<div class="video-info">
-								<div class="video-title">
-									Политика банка России по обеспечению финансовой стабильности
+
+		
+				<div class="promo__caption">ЗАПИСИ СЕССИЙ</div>
+				<div class="promo__right-items">
+						<div class="promo__right-item flex active" data-tab="1">
+								<div class="promo__box">
+										<div class="promo__item-caption">ПОЛИТИКА БАНКА РОССИИ ПО ОБЕСПЕЧЕНИЮ ФИНАНСОВОЙ СТАБИЛЬНОСТИ</div>
 								</div>
-								<div class="autor">
-									Bla Bla
+								<div class="promo__play">
+										<div class="promo__play-box flex-center">
+											 <div class="promo__play-bg">
+													 <img src="https://i3.ytimg.com/vi/nwZNGngFbVQ/hqdefault.jpg" alt="">
+											 </div>
+												<img src="images/logo/play.png" alt="">
+										</div>
 								</div>
-								<div class="position">
-									Bla Bla
+						</div>
+						<div class="promo__right-item flex active" data-tab="2">
+								<div class="promo__box">
+										<div class="promo__item-caption"><small>1 панельная сессия</small> РЕГУЛЯТОРНАЯ ПАНЕЛЬ: «НОВАЯ НОРМАЛЬНОСТЬ» РОССИЙСКОГО РЫНКА. К ЧЕМУ НАДО ГОТОВИТЬСЯ БАНКАМ?</div>
 								</div>
-							</div>
-							<div class="preview">
-								<img src="images/logo/yotube.png" alt="">
-							</div>
-						</a>
-					</li>
-					<li>
-						<a class="nav-element" href="">
-							<div class="video-info">
-								<div class="video-title">
-									Политика банка России по обеспечению финансовой стабильности
+								<div class="promo__play">
+									 <div class="promo__play-box flex-center">
+											 <div class="promo__play-bg">
+													 <img src="https://i3.ytimg.com/vi/OPX-G2oE59Y/hqdefault.jpg" alt="">
+											 </div>
+												<img src="images/logo/play.png" alt="">
+										</div>
 								</div>
-								<div class="autor">
-									Bla Bla
+						</div>
+						<div class="promo__right-item flex" data-tab="3">
+								<div class="promo__box">
+										<div class="promo__item-caption"><small>2 панельная сессия</small> ЖИЗНЬ В УСЛОВИЯХ НИЗКИХ СТАВОК.ПРОБЛЕМЫ И РЕШЕНИЯ.</div>
 								</div>
-								<div class="position">
-									Bla Bla
+								<div class="promo__play">
+									 <div class="promo__play-box flex-center">
+											 <div class="promo__play-bg">
+													 <img src="https://i3.ytimg.com/vi/cGIKN11PX4o/hqdefault.jpg" alt="">
+											 </div>
+												<img src="images/logo/play.png" alt="">
+										</div>
 								</div>
-							</div>
-							<div class="preview">
-								<img src="images/logo/yotube.png" alt="">
-							</div>
-						</a>
-					</li>
-					<li>
-						<a class="nav-element" href="">
-							<div class="video-info">
-								<div class="video-title">
-									Политика банка России по обеспечению финансовой стабильности
+						</div>
+						<div class="promo__right-item flex" data-tab="4">
+								<div class="promo__box">
+										<div class="promo__item-caption"><small>3 панельная сессия</small> ПЛАТА ЗА ДОСРОЧНЫЙ ВОЗВРАТ КРЕДИТОВ: ОЖИДАНИЯ И РЕАЛЬНОСТЬ</div>
 								</div>
-								<div class="autor">
-									Bla Bla
+								<div class="promo__play">
+									 <div class="promo__play-box flex-center">
+											 <div class="promo__play-bg">
+													 <img src="https://i3.ytimg.com/vi/nLQ128rQr-g/hqdefault.jpg" alt="">
+											 </div>
+												<img src="images/logo/play.png" alt="">
+										</div>
 								</div>
-								<div class="position">
-									Bla Bla
+						</div>
+						<div class="promo__right-item flex" data-tab="5">
+								<div class="promo__box">
+										<div class="promo__item-caption"><small>4 панельная сессия</small> КАЗНАЧЕЙСТВО БУДУЩЕГО - КУДА МЫ ДВИЖЕМСЯ? ЭВОЛЮЦИЯ И СОВРЕМЕННЫЕ ТРЕНДЫ</div>
 								</div>
-							</div>
-							<div class="preview">
-								<img src="images/logo/yotube.png" alt="">
-							</div>
-						</a>
-					</li>
-					<li>
-						<a class="nav-element" href="">
-							<div class="video-info">
-								<div class="video-title">
-									Политика банка России по обеспечению финансовой стабильности
+								<div class="promo__play">
+									 <div class="promo__play-box flex-center">
+											 <div class="promo__play-bg">
+													 <img src="https://i3.ytimg.com/vi/P1wKk8Mkmv0/hqdefault.jpg" alt="">
+											 </div>
+												<img src="images/logo/play.png" alt="">
+										</div>
 								</div>
-								<div class="autor">
-									Bla Bla
-								</div>
-								<div class="position">
-									Bla Bla
-								</div>
-							</div>
-							<div class="preview">
-								<img src="images/logo/yotube.png" alt="">
-							</div>
-						</a>
-					</li>
-					<li>
-						<a class="nav-element" href="">
-							<div class="video-info">
-								<div class="video-title">
-									Политика банка России по обеспечению финансовой стабильности
-								</div>
-								<div class="autor">
-									Bla Bla
-								</div>
-								<div class="position">
-									Bla Bla
-								</div>
-							</div>
-							<div class="preview">
-								<img src="images/logo/yotube.png" alt="">
-							</div>
-						</a>
-					</li>
-					<li>
-						<a class="nav-element" href="">
-							<div class="video-info">
-								<div class="video-title">
-									Политика банка России по обеспечению финансовой стабильности
-								</div>
-								<div class="autor">
-									Bla Bla
-								</div>
-								<div class="position">
-									Bla Bla
-								</div>
-							</div>
-							<div class="preview">
-								<img src="images/logo/yotube.png" alt="">
-							</div>
-						</a>
-					</li>
-				</ul>
-			</div>
+						</div>
+				</div>
+		
 		</div>
 	</div>
 </section>
